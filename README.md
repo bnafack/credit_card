@@ -5,7 +5,7 @@ The dataset we used was already clean with no missing data. Therefore, we chose 
 
 After that, we split the dataset into 10% for testing and 90% for training using the train_test_split method. We then employed the GridSearchCV technique for hyperparameter tuning to find the optimal hyperparameters for XGBoost within a specified grid of parameter values. We set 'n_jobs' to 10 to leverage multithreading for enhanced parallel computation. 
 
-Once we got the optimal parameters from the grid search, we used those parameters to train different data-centric models for imbalanced, unsampled, and downsampled datasets. Before performing upsampling/downsampling, we split the dataset into train and test datasets to prevent data leakage.
+Once we got the optimal parameters from the grid search, we used those parameters to train different data-centric models for imbalanced, unsampled, and downsampled datasets on train dataset. Before performing upsampling/downsampling, we split the dataset into train and test datasets to prevent data leakage.
 
 After the fitting step, we selected the best model with a higher Area Under the Precision-Recall Curve (AUPRC) value indicating better performance in terms of both precision and recall. We stored that model in a pickle file.
 
