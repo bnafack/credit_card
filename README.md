@@ -14,9 +14,9 @@ NB: At each step, I use the seed for reproductibility.
 
 ## Running and model testing
 
-* In order to execute this project, ensure that Python 3 is installed on your machine along with all the necessary packages listed in the `requirements.txt` file. These packages can be installed by following the provided instructions ` pip install -r requirements. txt`. 
+* In order to execute this project, ensure that Python 3 is installed on your machine along with all the necessary packages listed in the `requirements.txt` file. These packages can be installed by following the provided instructions ` pip install -r requirements.txt`. 
 
-* To replicate the experiment, execute the Jupyter Notebook named `credit_fraud_detection.ipynb`.
+* To replicate the experiment, open and run  the Jupyter Notebook named `credit_fraud_detection.ipynb`.
 
 * For model testing, utilize the final block in the aforementioned notebook. Alternatively, from your development environment,  run the command `python prediction.py directory_to_test_dataset`, where `directory_to_test_dataset` is the path to the test dataset (e.g., `python prediction.py dataset/test_dataset.csv`). The resulting output will be stored in the `output` folder in CSV format. 
 
